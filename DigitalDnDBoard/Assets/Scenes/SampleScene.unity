@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 76135952}
   - component: {fileID: 76135951}
-  - component: {fileID: 76135954}
+  - component: {fileID: 76135955}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -168,7 +168,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &76135954
+--- !u!114 &76135955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,12 +177,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 76135950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fed08f722849d14eb61bb6f6f90c70f, type: 3}
+  m_Script: {fileID: 11500000, guid: c07ad8aa00f50fe42a87d5e2e8c99628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 76135951}
-  squarePrefab: {fileID: 7418857174159848955, guid: d6abad03ca1eb3c409800615bb0166f5, type: 3}
-  selectedNodes: []
+  m_RadiusMin: 1.5
+  m_RadiusMax: 2
+  m_Height: 1
+  m_FlipNormals: 0
+  points: []
 --- !u!1 &135860156
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +495,7 @@ MonoBehaviour:
   zoomSpeed: 5
   minZoom: 1
   maxZoom: 20
-  dragSpeed: 0.1
+  dragSpeed: 0.5
 --- !u!1 &643233549
 GameObject:
   m_ObjectHideFlags: 0

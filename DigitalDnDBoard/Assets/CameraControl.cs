@@ -42,15 +42,15 @@ public class CameraControl : MonoBehaviour
     void HandleCameraDrag()
     {
         // Detect the start of the drag
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             // Store the initial point where the mouse is clicked, in world coordinates
             dragOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             return;
         }
 
-        // Only perform dragging if the left mouse button is held down
-        if (!Input.GetMouseButton(0)) return;
+        // Only perform dragging if the right mouse button is held down
+        if (!Input.GetMouseButton(1)) return;
 
         // Get the current mouse position in world coordinates
         Vector3 currentMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
