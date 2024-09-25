@@ -177,6 +177,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 76135950}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 61960490e61654c4bb3de3fb1ad1542c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -187,6 +188,18 @@ MonoBehaviour:
   gridIndicator: {fileID: 735760902}
   polygon: []
 --- !u!1 &348540782
+=======
+  m_Script: {fileID: 11500000, guid: c07ad8aa00f50fe42a87d5e2e8c99628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 76135951}
+  m_RadiusMin: 1.5
+  m_RadiusMax: 2
+  m_Height: 1
+  m_FlipNormals: 0
+  points: []
+--- !u!1 &135860156
+>>>>>>> 50df0cea2de9e94bd6bc072e691606fd191746ee
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,6 +398,7 @@ MonoBehaviour:
   zoomSpeed: 5
   minZoom: 5
   maxZoom: 20
+<<<<<<< HEAD
   dragSpeed: 1
   dragOrigin: {x: 0, y: 0, z: 0}
 --- !u!114 &519420034
@@ -487,6 +501,10 @@ GameObject:
   m_PrefabInstance: {fileID: 606061885}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272626386
+=======
+  dragSpeed: 0.5
+--- !u!1 &643233549
+>>>>>>> 50df0cea2de9e94bd6bc072e691606fd191746ee
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
