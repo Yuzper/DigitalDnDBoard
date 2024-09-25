@@ -8,6 +8,7 @@ public class CameraControl : MonoBehaviour
 
     private Camera cam;
     public float dragSpeed = 0.5f;  // Adjust this to control sensitivity; higher values make dragging faster
+    [SerializeField]
     private Vector3 dragOrigin;     // Point where mouse is first clicked
 
     void Start()
@@ -42,26 +43,23 @@ public class CameraControl : MonoBehaviour
     void HandleCameraDrag()
     {
         // Detect the start of the drag
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(2))
         {
             // Store the initial point where the mouse is clicked, in world coordinates
             dragOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            return;
         }
 
-        // Only perform dragging if the left mouse button is held down
-        if (!Input.GetMouseButton(0)) return;
+        // Change camera position based on mouse movementl
+        if(Input.GetMouseButton(2))
+        {
+            // Get the current mouse position in world coordinates
+            Vector3 currentMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        // Get the current mouse position in world coordinates
-        Vector3 currentMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            // Calculate the difference (delta) between the original mouse position and the current one
+            Vector3 difference = dragOrigin - currentMousePosition;
 
-        // Calculate the difference (delta) between the original mouse position and the current one
-        Vector3 difference = dragOrigin - currentMousePosition;
-
-        // Move the camera in the opposite direction to the mouse drag
-        transform.position += difference * dragSpeed;
-
-        // Update the drag origin to the new current position for smooth dragging
-        dragOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            // Move the camera in the opposite direction to the mouse drag
+            transform.position += difference * dragSpeed;
+        }
     }
 }
