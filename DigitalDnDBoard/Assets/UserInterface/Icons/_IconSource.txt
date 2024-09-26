@@ -1,0 +1,6 @@
+Icon website: https://www.flaticon.com
+ICON_NAME: LINK
+Drag: https://www.flaticon.com/free-icon/all-directions_2926322?term=drag&page=1&position=15&origin=search&related_id=2926322
+Polygon: https://www.flaticon.com/free-icon/pentagon_6215155?term=polygon&related_id=6215155
+Circle Radius: https://www.flaticon.com/free-icon/radius_6215838?term=circle+radius&page=1&position=2&origin=search&related_id=6215838
+Cone: https://www.flaticon.com/free-icon/radius_5936784?term=radius&page=1&position=24&origin=search&related_id=5936784
