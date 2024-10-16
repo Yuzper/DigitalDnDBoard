@@ -4,3 +4,7 @@ Drag: https://www.flaticon.com/free-icon/all-directions_2926322?term=drag&page=1
 Polygon: https://www.flaticon.com/free-icon/pentagon_6215155?term=polygon&related_id=6215155
 Circle Radius: https://www.flaticon.com/free-icon/radius_6215838?term=circle+radius&page=1&position=2&origin=search&related_id=6215838
 Cone: https://www.flaticon.com/free-icon/radius_5936784?term=radius&page=1&position=24&origin=search&related_id=5936784
+Visible: https://www.flaticon.com/free-icon/visibility_3395544?term=visible&page=1&position=1&origin=search&related_id=3395544
+Invisible: https://www.flaticon.com/free-icon/visible_4175339?related_id=4175339
+Layers: https://www.flaticon.com/search?word=layer
+Grid: https://www.flaticon.com/search?word=grid
