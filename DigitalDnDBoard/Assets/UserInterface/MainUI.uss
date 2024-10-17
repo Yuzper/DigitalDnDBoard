@@ -1,2 +1,54 @@
 .panel {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.toolbar-button {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -unity-slice-left: 0;
+    -unity-slice-top: 0;
+    -unity-slice-right: 0;
+    -unity-slice-bottom: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.toolbar-button.selected {
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
+}
+
+.toolbar-button:hover {
+    background-color: rgb(134, 255, 151);
+    rotate: -10deg;
+    transition-duration: 0.3s;
 }

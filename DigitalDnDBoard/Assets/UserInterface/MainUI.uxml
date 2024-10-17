@@ -1,4 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UserInterface/MainUI.uss?fileID=7433441132597879392&amp;guid=061668b20963a7540823ae6b254c4717&amp;type=3#MainUI" />
-    <ui:VisualElement class="panel" />
+    <ui:VisualElement class="panel">
+        <ui:GroupBox tabindex="0" name="ToolBarMenu">
+            <ui:Button display-tooltip-when-elided="true" name="Default" class="toolbar-button" style="background-image: url(&apos;project://database/Assets/UserInterface/Icons/all-directions.png?fileID=2800000&amp;guid=7eb5f24f33f63e64a8b54ff72c4f0d5e&amp;type=3#all-directions&apos;);" />
+            <ui:Button display-tooltip-when-elided="true" name="Polygon" class="toolbar-button" style="background-image: url(&apos;project://database/Assets/UserInterface/Icons/pentagon.png?fileID=2800000&amp;guid=c0ce2812a7c7c6f459449ffd15f44e39&amp;type=3#pentagon&apos;);" />
+        </ui:GroupBox>
+    </ui:VisualElement>
 </ui:UXML>
