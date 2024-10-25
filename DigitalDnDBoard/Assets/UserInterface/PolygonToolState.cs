@@ -39,7 +39,6 @@ public class PolygonToolState : ToolState
                 0.1f // Optional for 3D grids, ignore for 2D
             );
 
-            Debug.Log("w");
             //We dont want to add multiple of the same point in a row and we dont want to create a polygon with only one point since thats just a dot.
             if(points.Count > 0 && gridPosition == points[^1]) return; //Might need to change to break.
 
@@ -71,6 +70,8 @@ public class PolygonToolState : ToolState
         var go = new GameObject("Polygon");
         var m_mesh = go.AddComponent<ProBuilderMesh>();
         m_mesh.CreateShapeFromPolygon(points.ToArray(), 1f, false);
+        go.AddComponent<MeshCollider>();
+        go.layer = (int)DnDLayers.Placeable_Objects + 10;
         Reset();
     }
 
@@ -79,7 +80,16 @@ public class PolygonToolState : ToolState
     }
 
     //Temporarily draw the current polygon. reset when it is complete.
+    //Linerenderer
     public void DrawTempPolygon(){
 
+    }
+
+    public enum DnDLayers{
+        Background,
+        Map,
+        Grid,
+        Placeable_Objects,
+        UI,
     }
 }
