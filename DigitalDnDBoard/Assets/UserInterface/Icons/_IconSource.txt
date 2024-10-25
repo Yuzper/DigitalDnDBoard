@@ -8,3 +8,7 @@ Visible: https://www.flaticon.com/free-icon/visibility_3395544?term=visible&page
 Invisible: https://www.flaticon.com/free-icon/visible_4175339?related_id=4175339
 Layers: https://www.flaticon.com/search?word=layer
 Grid: https://www.flaticon.com/search?word=grid
+POI aka point of interest:  https://www.flaticon.com/search?word=poi
+                            https://www.flaticon.com/search?word=point%20of%20interest
+sticky note: https://www.flaticon.com/search?word=sticky%20note
+notebook: https://www.flaticon.com/search?word=notebook
